@@ -122,5 +122,9 @@
     font-weight: 700;
 }
 
+.about-wrap video {
+  width: 100%;
+}
+
 .tips-section ul li {list-style: disc; color: #39393b;}
 .tips-section ul {margin: 0 0 1.5em 1em;}
