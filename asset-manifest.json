@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/velogear/static/css/main.ea609e90.css",
-    "main.js": "/velogear/static/js/main.e8895a72.js",
+    "main.css": "/velogear/static/css/main.9357b0cf.css",
+    "main.js": "/velogear/static/js/main.3cd71068.js",
     "static/js/453.8a813a4c.chunk.js": "/velogear/static/js/453.8a813a4c.chunk.js",
     "static/media/cycling.mp4": "/velogear/static/media/cycling.ef4049e53c69392975b8.mp4",
     "static/media/logo1.png": "/velogear/static/media/logo1.bbc19413793db285e971.png",
@@ -9,12 +9,12 @@
     "static/media/revicons.ttf": "/velogear/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/velogear/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/velogear/index.html",
-    "main.ea609e90.css.map": "/velogear/static/css/main.ea609e90.css.map",
-    "main.e8895a72.js.map": "/velogear/static/js/main.e8895a72.js.map",
+    "main.9357b0cf.css.map": "/velogear/static/css/main.9357b0cf.css.map",
+    "main.3cd71068.js.map": "/velogear/static/js/main.3cd71068.js.map",
     "453.8a813a4c.chunk.js.map": "/velogear/static/js/453.8a813a4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea609e90.css",
-    "static/js/main.e8895a72.js"
+    "static/css/main.9357b0cf.css",
+    "static/js/main.3cd71068.js"
   ]
 }
