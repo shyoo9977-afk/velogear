@@ -1,0 +1,126 @@
+/* App.css의 색/톤과 자연스럽게 어울리도록, 옅은 배경 + 연한 그림자 사용 */
+.about-wrap {
+  padding: 28px 20px 36px;
+  color: var(--color-base, #333);
+}
+
+/* 상단 히어로: 흐릿한 그라디언트와 은은한 카드 */
+.about-hero {
+  background: radial-gradient(600px 300px at 10% -40%, rgba(0,0,0,0.03), transparent 55%),
+              radial-gradient(500px 260px at 90% -30%, rgba(0,0,0,0.03), transparent 55%),
+              #fff;
+  border-radius: var(--radius, 15px);
+  box-shadow: var(--shodow, 0 6px 20px rgba(0,0,0,0.08));
+  padding: 28px 24px;
+  text-align: center;
+  margin-bottom: 24px;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.about-title {
+  margin: 0 0 6px;
+  font-size: 1.6rem;
+  color: #444;
+  letter-spacing: 0.02em;
+}
+
+.about-sub {
+  margin: 0;
+  color: var(--muted, #6b7280);
+  font-size: 0.98rem;
+}
+
+/* 섹션 카드 */
+.about-section {
+  background: #fff;
+  border-radius: var(--radius, 15px);
+  box-shadow: var(--shodow, 0 6px 20px rgba(0,0,0,0.08));
+  padding: 20px 18px;
+  border: 1px solid rgba(0,0,0,0.04);
+  margin-bottom: 16px;
+}
+
+/* 타이틀/텍스트 */
+.about-h2 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  color: #444;
+}
+
+.about-h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: #4d4d4d;
+}
+
+.about-p {
+  margin: 0;
+  line-height: 1.65;
+  color: #555;
+}
+
+/* 리스트(점은 연하게, 간격은 넉넉히) */
+.about-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.about-list li + li { margin-top: 6px; }
+
+/* 3열 그리드(모바일 1열) */
+.about-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-grid > li {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 14px 12px;
+  border: 1px solid #eee;
+}
+
+/* 링크: 브랜드 톤과 자연스럽게 */
+.about-link {
+  color: var(--brand1, #B45253);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(180, 82, 83, 0.25);
+  padding-bottom: 1px;
+}
+
+.about-link:hover {
+  color: var(--brand2, #FCB53B);
+  border-color: rgba(252, 181, 59, 0.35);
+}
+
+/* 반응형 */
+@media (max-width: 920px) {
+  .about-wrap { padding: 24px 16px 32px; }
+  .about-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-title { font-size: 1.4rem; }
+}
+
+.about-section h2 {
+    COLOR: #124875;
+    PADDING-BOTTOM: 10px;
+    TEXT-ALIGN: left;
+    BORDER-LEFT: #18609C 10px solid;
+    padding: 3px 9px;
+    margin: 30px 0 20px 0;
+    BACKGROUND-COLOR: #FFF;
+    BORDER-BOTTOM: 2px solid #18609C;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.tips-section ul li {list-style: disc; color: #39393b;}
+.tips-section ul {margin: 0 0 1.5em 1em;}

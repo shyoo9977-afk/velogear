@@ -1,0 +1,224 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "group": "자전거·휠/부품",
+      "category": "bike",
+      "title": "로드 바이크 카본 프레임",
+      "description": "장거리 라이딩에 최적화된 초경량 카본 프레임. 업힐과 평지 모두에서 경쾌한 반응성을 제공합니다.",
+      "imageUrl": "https://ae01.alicdn.com/kf/H3c51b2b2731e49f7a5a54069fbfb0952d.jpg",
+      "tags": ["로드", "카본", "경량", "클라이밍"],
+      "price": 3000000,
+      "recommended": true
+    },
+    {
+      "id": 2,
+      "group": "착용장비(의류·보호)",
+      "category": "helmet",
+      "title": "에어로 헬멧 V5",
+      "description": "공기역학 설계를 적용한 레이스용 헬멧. 뛰어난 통풍과 안전 규격을 모두 충족합니다.",
+      "imageUrl": "https://mblogthumb-phinf.pstatic.net/20120621_217/piggybankm_1340204436176xAlSq_JPEG/Giro_AirAttackShield_H_BlkRed_34-570x600.jpg?type=w420",
+      "tags": ["에어로", "헬멧", "환기"],
+      "price": 240000,
+      "recommended": false
+    },
+    {
+      "id": 3,
+      "group": "착용장비(의류·보호)",
+      "category": "apparel",
+      "title": "여름용 저지 콜드드라이",
+      "description": "흡습속건 원단으로 땀을 빠르게 배출하여 한여름에도 쾌적한 라이딩을 지원합니다.",
+      "imageUrl": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/934f/3bd4e85afc487456d356f0278a77db2bb3148d46ab25a65dcf3b6b9ce09e.jpg",
+      "tags": ["저지", "여름", "흡습속건"],
+      "price": 189000,
+      "recommended": true
+    },
+    {
+      "id": 4,
+      "group":  "착용장비(의류·보호)",
+      "category": "shorts",
+      "title": "빕숏 컴포트 패드",
+      "description": "장거리 퍼포먼스를 위한 고밀도 패드와 4방향 신축 원단을 적용했습니다.",
+      "imageUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/4258643227/B.jpg?501000000",
+      "tags": ["빕숏", "패드", "장거리"],
+      "price": 234000,
+      "recommended": false
+    },
+    {
+      "id": 5,
+      "group":  "수납·거치·액세서리",
+      "category": "accessory",
+      "title": "알루미늄 바테이프",
+      "description": "그립감이 뛰어나며 진동 흡수력이 좋은 하이브리드 소재의 바테이프.",
+      "imageUrl": "https://ae01.alicdn.com/kf/H07d9e29f404543518771c1b25fe94b16i.jpg_640x640q90.jpg",
+      "tags": ["바테이프", "그립", "진동흡수"],
+      "price": 34000,
+      "recommended": true
+    },
+    {
+      "id": 6,
+      "group":  "수납·거치·액세서리",
+      "category": "light",
+      "title": "프론트 라이트 1200루멘",
+      "description": "도심과 국도를 모두 커버하는 강력한 밝기와 USB-C 급속 충전 지원.",
+      "imageUrl": "https://sc04.alicdn.com/kf/H05e6d3801f2845bbbdf1e5984f0033fbF.jpg",
+      "tags": ["라이트", "야간", "USB-C"],
+      "price": 49000,
+      "recommended": false
+    },
+    {
+      "id": 7,
+      "group":  "전자장비",
+      "category": "computer",
+      "title": "GPS 사이클링 컴퓨터",
+      "description": "턴바이턴 내비게이션과 파워/심박/케이던스 호환성을 갖춘 올인원 장치.",
+      "imageUrl": "https://image.zdnet.co.kr/2023/04/14/6930b8653ca6417c5c38864d9d1daef4.jpg",
+      "tags": ["GPS", "내비게이션", "센서연동"],
+      "price": 890000,
+      "recommended": true
+    },
+    {
+      "id": 8,
+      "group":  "전자장비" ,
+      "category": "sensor",
+      "title": "듀얼 밴드 심박 센서",
+      "description": "BLE/ANT+ 동시 지원으로 다양한 앱과 기기와의 호환성이 뛰어납니다.",
+      "imageUrl": "https://sitem.ssgcdn.com/02/76/38/item/1000696387602_i1_336.jpg",
+      "tags": ["심박", "BLE", "ANT+"],
+      "price": 237000,
+      "recommended": false
+    },
+    {
+      "id": 9,
+      "group": "보급·수분관리",
+      "category": "nutrition",
+      "title": "에너지 젤 시트러스",
+      "description": "흡수가 빠른 탄수화물과 전해질을 제공하여 퍼포먼스를 안정적으로 유지합니다.",
+      "imageUrl": "https://cdn.wellife.co.kr/upload/item/G2001002707/202502271532000720_L.png",
+      "tags": ["영양", "젤", "전해질"],
+      "price": 69000,
+      "recommended": true
+    },
+    {
+      "id": 10,
+      "group": "보급·수분관리" ,
+      "category": "bottle",
+      "title": "보틀 700ml 트라이튼",
+      "description": "무취 트라이탄 소재와 한 손으로 여닫는 빠른 캡 설계.",
+      "imageUrl": "https://godomall.speedycdn.net/5d421e49351b5c728c046398cad85359/goods/1000002547/image/main/1000002547_main_037.jpg",
+      "tags": ["보틀", "수분보충", "트라이탄"],
+      "price": 70000,
+      "recommended": false
+    },
+    {
+      "id": 11,
+      "group": "착용장비(의류·보호)",
+      "category": "shoes",
+      "title": "클릿 슈즈 로드 프로",
+      "description": "강성 높은 솔과 마이크로 다이얼로 정밀한 피팅이 가능합니다.",
+      "imageUrl": "https://cdn.imweb.me/thumbnail/20200316/236daf9204cac.png",
+      "tags": ["클릿", "다이얼", "강성"],
+      "price": 199000,
+      "recommended": true
+    },
+    {
+      "id": 12,
+      "group":  "착용장비(의류·보호)",
+      "category": "gloves",
+      "title": "젤 패드 썸머 글러브",
+      "description": "충격을 흡수하는 젤 패드와 통기성 좋은 메쉬 등판.",
+      "imageUrl": "https://ae01.alicdn.com/kf/S9bb324328683462f8306ae944f9cf142w.jpg",
+      "tags": ["장갑", "젤패드", "메쉬"],
+      "price": 74000,
+      "recommended": false
+    },
+    {
+      "id": 13,
+      "group":"자전거·휠/부품" ,
+      "category": "saddle",
+      "title": "안장 컴포트 컷아웃",
+      "description": "중심부 컷아웃으로 압박을 줄이고 장거리 편안함을 제공합니다.",
+      "imageUrl": "https://contents.sixshop.com/uploadedFiles/15433/product/image_1635685302031.jpg",
+      "tags": ["안장", "컷아웃", "편안함"],
+      "price": 399000,
+      "recommended": true
+    },
+    {
+      "id": 14,
+      "group":  "수납·거치·액세서리",
+      "category": "bag",
+      "title": "탑튜브 백 방수형",
+      "description": "생활 방수와 간편한 개폐 구조, 보조배터리 수납에 최적.",
+      "imageUrl": "https://thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/04f0/cdf02fbee986096af553550b609a23aa425e1818ccb2cdebf7062bb08f53.png",
+      "tags": ["가방", "방수", "탑튜브"],
+      "price": 78000,
+      "recommended": false
+    },
+    {
+      "id": 15,
+      "group": "정비·공구·펌프" ,
+      "category": "pump",
+      "title": "미니 펌프 하이볼륨",
+      "description": "프레스타/슈래더 겸용 헤드, 가벼운 무게로 휴대성이 뛰어납니다.",
+      "imageUrl": "https://img.danawa.com/prod_img/500000/158/022/img/2022158_1.jpg?_v=20200226153819",
+      "tags": ["펌프", "휴대용", "겸용헤드"],
+      "price": 49000,
+      "recommended": true
+    },
+    {
+      "id": 16,
+      "group": "정비·공구·펌프",
+      "category": "maintenance",
+      "title": "드라이 체인 루브",
+      "description": "먼지 많은 여름 환경에 적합한 드라이 타입 윤활제.",
+      "imageUrl": "https://sitem.ssgcdn.com/26/07/04/item/1000574040726_i1_750.jpg",
+      "tags": ["정비", "체인", "윤활"],
+      "price": 28000,
+      "recommended": false
+    },
+    {
+      "id": 17,
+      "group": "자전거·휠/부품",
+      "category": "wheel",
+      "title": "카본 휠셋 50mm",
+      "description": "올라운드 성향의 50mm 림 하이트와 안정적인 횡강성.",
+      "imageUrl": "https://www.wheelpro.co.kr/files/attach/images/487/641/095/a29e24f4e37e30a6c5ca2bdf6fb8be7e.jpg",
+      "tags": ["휠셋", "카본", "올라운드"],
+      "price": 770000,
+      "recommended": true
+    },
+    {
+      "id": 18,
+      "group": "착용장비(의류·보호)",
+      "category": "glasses",
+      "title": "포토크로믹 아이웨어",
+      "description": "조도에 따라 자동으로 변색되는 렌즈로 다양한 환경에 대응.",
+      "imageUrl": "https://ae01.alicdn.com/kf/S5832148e6300483ba346dce8aa77c0d5t.jpg",
+      "tags": ["아이웨어", "변색렌즈", "UV"],
+      "price": 179000,
+      "recommended": false
+    },
+    {
+      "id": 19,
+      "group":  "인도어 트레이닝",
+      "category": "trainer",
+      "title": "스마트 트레이너",
+      "description": "실내에서 파워 기반 워크아웃과 가상 경로 라이딩을 지원합니다.",
+      "imageUrl": "https://www.thebike.co.kr/data/editor/2109/f2c51be1dc960234a25d437f4d066bf4_1630656745_5375.jpg",
+      "tags": ["실내", "파워", "ERG"],
+      "price": 1300000,
+      "recommended": true
+    },
+    {
+      "id": 20,
+      "group":"아웃도어·캠핑",
+      "category": "camp",
+      "title": "바이크패킹 텐트 1P",
+      "description": "경량 폴과 작은 팩 사이즈로 자전거 투어에 최적화된 싱글월 텐트.",
+      "imageUrl": "https://mblogthumb-phinf.pstatic.net/MjAyMTExMjlfNzEg/MDAxNjM4MTc1MzY0NDM0.4eIYzB0BIt6jrUtxY70oBH2v6o7gAcvl1JKJxv4eHIYg.m9Qs5vo8pAhUIGbh6rECecBUO2WJeniOvgj7WQvEECYg.JPEG.kbbang81/20211111_103416_1.jpg?type=w800",
+      "tags": ["바이크패킹", "텐트", "경량"],
+      "price": 487000,
+      "recommended": false
+    }
+  ]
+}
