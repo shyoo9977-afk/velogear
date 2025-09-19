@@ -21,7 +21,7 @@ export default function CategoryTabs() {
   const [tab, setTab] = useState(GROUPS[0].key);
 
   useEffect(() => {
-    fetch("./db.json")
+    fetch(`${process.env.PUBLIC_URL}/db.json`)
       .then(r => r.json())
       .then(data => setItems(data.items || []))
       .catch(console.error);

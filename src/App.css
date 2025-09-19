@@ -260,6 +260,7 @@ header .gnb a:active {
 /* 카드 그리드는 기존 규칙을 유지하되, 컨테이너 축소에 따라 자동 재배치 */
 .recom-card {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 16px;
   margin-top: 20px;
@@ -280,10 +281,10 @@ header .gnb a:active {
 
 /* 카드 이미지: 비율 유지 */
 .card img {
-  display: block;
   width: 100%;
-  height: 200px;         /* 공통 높이 */
-  object-fit: cover;     /* 넘치면 자름 */
+  height: auto;          /* 높이는 비율로 자동 계산 */
+  aspect-ratio: 3 / 2;   /* 예: 3:2 비율. 필요에 따라 4/3, 16/9 등으로 변경 */
+  object-fit: cover;     /* 넘치는 부분은 자연스럽게 크롭 */
 }
 
 #BEST_SELLER {
@@ -366,10 +367,14 @@ header .gnb a:active {
 
 /* 카드 그리드 (최소 1, 최대 4) */
 .category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* 디버그 배경 제거(red) */
-  gap: 16px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
 }
+
+
 
 /* 아이템 카드 내부 텍스트 */
 .item-text { padding: 10px 12px; text-align: center; }
@@ -407,23 +412,25 @@ header .gnb a:active {
 }
 .site-footer small:hover { opacity: 1; }
 
-/* ========== 9) 반응형 미디어 쿼리 ========== */
-@media (max-width: 1024px) {
-  :root { --h-hero: 34vh; }
+
+@media (max-width: 768px) {
+  .recom-text { padding: 12px; }
+  .recom-card { grid-template-columns: repeat(auto-fit, minmax(320px, 600px)); }
+  .category-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 600px)); }
+  .home-title { font-size: 1.25rem; }
+  .intro-text .text-area { margin-top: 8px; }
 }
-@media (max-width: 640px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   :root { --h-hero: 30vh; }
   .react-multiple-carousel__arrow { width: 38px; height: 38px; }
   main { padding: 16px; }
   .home-title { font-size: 1.35rem; }
   .recom-card { grid-template-columns: repeat(auto-fit, minmax(320px, 600px)); }
-  .category-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 600px)); }
+  .category-grid {  grid-template-columns: repeat(auto-fit, minmax(320px, 600px)); }
 }
-@media (max-width: 480px) {
-  .card img { height: 180px; }                  /* 작은 화면 카드 이미지 높이 보정 */
-  .recom-text { padding: 12px; }
-  .recom-card { grid-template-columns: repeat(auto-fit, minmax(320px, 560px)); }
-  .category-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 560px)); }
-  .home-title { font-size: 1.25rem; }
-  .intro-text .text-area { margin-top: 8px; }
+@media (min-width: 1025px) {
+  :root { --h-hero: 34vh; }
 }
+
+@media (max-width: 768px)   { .card img { aspect-ratio: 4 / 3; } }   /* 세로 조금 더 여유 */
+@media (min-width: 1025px)  { .card img { aspect-ratio: 16 / 9; } }  /* 와이드 화면 */
