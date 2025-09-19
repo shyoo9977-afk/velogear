@@ -8,7 +8,7 @@ const Home = () => {
   const [recs, setRecs] = useState([]);            // RecomCard용: 추천만
 
   useEffect(() => {
-    fetch("/db.json")
+    fetch(`${process.env.PUBLIC_URL}/db.json`)
       .then((r) => r.json())
       .then((data) => {
         const items = Array.isArray(data.items) ? data.items : [];

@@ -12,7 +12,7 @@ export default function DetailPage() {
   // state가 없을 때를 대비해 db.json에서 보충
   useEffect(() => {
     if (passed) return;
-    fetch("./db.json")
+    fetch(`${process.env.PUBLIC_URL}/db.json`)
       .then(r => r.json())
       .then(d => setItems(d.items || []))
       .catch(console.error);

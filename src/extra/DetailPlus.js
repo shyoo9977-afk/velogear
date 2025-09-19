@@ -18,7 +18,7 @@ export default function DetailPlus() {
 
   useEffect(() => {
     if (passed) return;
-    fetch("./db.json")
+    fetch(`${process.env.PUBLIC_URL}/db.json`)
       .then((r) => r.json())
       .then((d) => setItems(d.items || []))
       .catch(console.error);
