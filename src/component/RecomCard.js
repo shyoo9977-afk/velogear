@@ -5,8 +5,12 @@ import { useNavigate } from 'react-router-dom';
 
 const RecomCard = ({ item }) => {
   const navigate = useNavigate();
+  const goDetail = () => {
+    navigate(`/detail/${item.id}`, { state: { item } }); // 선택 아이템 전달
+  };
+  
   return (
-    <div className="card" onClick={()=>navigate(`/category/${item.id}`)}>
+    <div className="card" onClick={goDetail} style={{cursor:'pointer'}}>
       <div id="BEST_SELLER">
         <span class="badge-label">최다 판매</span>
       </div>

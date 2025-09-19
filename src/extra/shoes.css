@@ -4,7 +4,6 @@
   margin: 0 auto;
   padding: 24px;
   color: #333;
-  font-family: "GMarketSans", "Segoe UI", sans-serif;
   background: #fafafa;
 }
 
@@ -181,6 +180,13 @@
   width: 90%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+.modal-panel button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  zoom: 2;
 }
 
 /* ==== 토스트 ==== */

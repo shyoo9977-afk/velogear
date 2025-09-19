@@ -7,15 +7,10 @@ import aboutMovie from "../assets/cycling.mp4"
 const About = () => {
   return (
     <main className="about-wrap container" role="main" aria-labelledby="aboutTitle">
-      <header className="about-hero">
-        <h1 id="aboutTitle" className="about-title">About VeloGear Finder</h1>
-        <p className="about-sub">사이클링 애호가를 위한 맞춤형 자전거 부품·용품 탐색 플랫폼</p>
-      </header>
+      <h1 id="aboutTitle" className="about-title">About VeloGear Finder</h1>
       <div className="about-wrap">
         <video src={aboutMovie} autoPlay loop muted preload='auto' playsInline></video>
       </div>
-
-
 
       <section className="about-section">
         <h2 className="about-h2">소개</h2>

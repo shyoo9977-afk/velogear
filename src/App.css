@@ -6,13 +6,22 @@
 
 /* ========== 0) CSS 변수(테마) ========== */
 :root {
+  --warmSand: #F4E9D8;   /* 헤더 배경 */
+  --warmCream: #FBF7F3; /* 본분 배경 */
+  --deepGray1: #353B42; /* 헤더 텍스트 */
+  --deepGray2: #2E2E2E; /* 본문 텍스트 */
+  --brandRed: #C64F55; /* 엑티브/강조 */
+  --brandGreen: #4FAE6A; 
+  --hairLine: #EDE6DF; /* 헤어라인 베이지 */
+
+
   --color-base: rgba(0, 0, 0, 0.8);
   --muted: #6b7280;
 
   --brand1: #b45253;  /* 포인트 레드 */
   --brand2: #fcb53b;  /* 액센트 옐로우 */
   --brand3: #ffe797;  /* 연한 배경톤 */
-  --brand4: #84994f;  /* 보조 그린 */
+  --band4: #84994f;  /* 보조 그린 */
   --highlight: #f6ff99;
 
   --bg-base: #f8f4f4;
@@ -29,8 +38,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  color: var(--color-base);
-  background: var(--bg-base);
+  color: var(--deepGray2);
+  background: var(--warmCream);
   font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", sans-serif;
   line-height: 1.55;
 }
@@ -68,50 +77,49 @@ header .logo {
 }
 header .logo img {
   max-width: 80px;
-  margin-right: 40px;
+  margin-right: 20px;
   vertical-align: middle;
 }
-header .logo span:first-of-type { color: var(--brand1); }
-header .logo span:last-child { color: var(--brand4); }
+header .logo span:first-of-type { color: var(--brandRed); }
+header .logo span:last-child { color: var(--brandGreen); }
 
 header .gnb {
   display: flex;
+  justify-content: center;  
   align-items: center;
-  justify-content: center;
   gap: 5px;
-  padding: 0 10px;
-  margin-bottom: 20px;
-  background: var(--brand3);
-  /* border-radius: 999px; */
+  padding: 0 10PX;
+  background: rgb(184, 184, 184);
 }
 header .gnb a {
-  flex: 1;
-  text-align: center;
-  line-height: 3;
   font-size: 18px;
   font-weight: 600;
+}
+
+header .gnb a {
+  flex: 1;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 3;
   color: #555;
-  border-radius: 999px;
-  transition: background .2s ease, color .2s ease;
 }
-/* 범위가 전역으로 새어 나가던 :link/:visited 스코프 수정 */
-header .gnb a:link,
-header .gnb a:visited,
-header .gnb a:focus {
-  background: var(--brand3);
-  color: #111;
-}
+
 header .gnb a:hover {
-  background: #ffd788;
+  background: orange;
 }
-header .gnb a:active {
-  background: #b45309;
-  color: #fff;
-}
+
+header .gnb a.active {
+  background: var(--brandRed);  /* 선택 메뉴 배경색 */
+  color: white;                  /* 선택 메뉴 글자색 */
+  transition: background 0.3s ease, color 0.3s ease;
+} 
+
 
 /* ========== 4) Hero Carousel (react-multi-carousel) ========== */
 /* 컨테이너 */
 .react-multi-carousel-list.hero-slide {
+  margin-top: 20px;
   --gap: 16px;
   --arrow-bg: rgba(15, 23, 42, 0.3);
   --arrow-bg-hover: rgba(15, 23, 42, 0.75);
@@ -218,7 +226,7 @@ header .gnb a:active {
 
 .intro-text p {
   margin-top: 20px;
-  color: #0b1220;
+  color: var(--deepGray2);
   line-height: 1.7;
 }
 
@@ -227,7 +235,7 @@ header .gnb a:active {
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 800;
-  color: #b22222;
+  color: var(--brandRed);
   padding-bottom: 6px;
 }
 .home-title::after {
@@ -289,13 +297,13 @@ header .gnb a:active {
 
 #BEST_SELLER {
     position: absolute;
-    left: 10px; top: 10px;
+    left: 20px; top: 20px;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 700;
     color: white;
-    padding: 2px 5px;
-    background: #d14900;
+    padding: 4px 6px;
+    background: rgba(255, 0, 0, 0.678);
 }
 
 /* 카드 텍스트(추천) */
@@ -417,7 +425,7 @@ header .gnb a:active {
   .recom-text { padding: 12px; }
   .recom-card { grid-template-columns: repeat(auto-fit, minmax(320px, 600px)); }
   .category-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 600px)); }
-  .home-title { font-size: 1.25rem; }
+  .home-title { font-size: 1.4rem; }
   .intro-text .text-area { margin-top: 8px; }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -430,7 +438,17 @@ header .gnb a:active {
 }
 @media (min-width: 1025px) {
   :root { --h-hero: 34vh; }
+  header .gnb {
+    justify-content: center;  /* 가운데로 모으기 */
+    gap: 8px;                 /* 항목 간 간격 */
+  }
+  header .gnb a {
+    flex: 0 0 200px;          /* grow=0, shrink=0, basis=300px (고정폭) */
+    max-width: 300px;         /* 안정성 차원에서 한 번 더 보강 */
+  }
 }
 
 @media (max-width: 768px)   { .card img { aspect-ratio: 4 / 3; } }   /* 세로 조금 더 여유 */
 @media (min-width: 1025px)  { .card img { aspect-ratio: 16 / 9; } }  /* 와이드 화면 */
+
+
