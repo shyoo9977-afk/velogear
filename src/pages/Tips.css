@@ -2,6 +2,7 @@
 .tips-wrap { max-width: 960px; padding: 12px 16px; }
 .tips-title { font-size: 28px;  }
 
+.contents { margin: 0 auto;}
 /* 탭 바 */
 .tips-tabs {
   display: flex;
